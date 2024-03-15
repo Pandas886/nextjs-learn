@@ -12,6 +12,8 @@ export default function Search({ placeholder }: { placeholder: string }) {
     const handleSearch= useDebouncedCallback((value:string)=>{
 
             var urlSearchParams =new URLSearchParams(searchParams);
+            //当用户键入新的搜索查询时，您希望将页码重置为1
+            urlSearchParams.set('page', '1');
             console.log(urlSearchParams);
             console.log(searchParams);
             console.log(value);
