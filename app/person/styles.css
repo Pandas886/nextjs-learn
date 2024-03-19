@@ -1,0 +1,23 @@
+.container {
+    min-height: 100vh; // 代替了原来的h-screen
+padding: 4rem 1rem; // 根据需要调整内部间距
+display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eceff1; // 你的其他样式
+}
+
+/* 移动端响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        display: block; // 切换布局以适应屏幕宽度
+    }
+
+    /* 在移动端调整文本大小和间距等 */
+    .text-lg {
+        font-size: 1rem;
+    }
+
+    /* 这里还可以继续添加其他的样式规则来优化移动端展示 */
+}
